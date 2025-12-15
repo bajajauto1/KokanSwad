@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kokan Swad | Pure Mango Taste</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --mango-yellow: #FFC107;
+      --mango-orange: #080808;
+      --leaf-green: #2E7D32;
+      --dark-text: #333;
+      --light-bg: #FFF8E1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--light-bg), #fff);
+      color: var(--dark-text);
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, var(--mango-yellow), var(--mango-orange));
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
+    }
+
+    .logo h1 {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1586201375761-83865001e17b') center/cover no-repeat;
+      position: relative;
+    }
+
+  
+    /* About */
+    .section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      font-size: 32px;
+      color: var(--leaf-green);
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* Social Media */
+    .socials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .social-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .social-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .social-card i {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .youtube { color: #FF0000; }
+    .instagram { color: #E1306C; }
+    .facebook { color: #1877F2; }
+    .google { color: #34A853; }
+
+    .social-card h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .social-card a {
+      text-decoration: none;
+      color: var(--leaf-green);
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--leaf-green);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    footer span {
+      color: var(--mango-yellow);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+      .hero-content h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <!-- Replace logo.png with your actual logo -->
+      <img src="kokanswadlogo.png" alt="Kokan Swad Logo">
+      <h1>Kokan Swad By Jdhav Bandhu</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#social">Social</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h3>Shetkari To Grahak...</h3>
+    <p>
+      Kokan Swad is a premium mango brand bringing you the real taste of Konkan. We deliver naturally ripened mangoes with purity, freshness and trust.
+    </p>
+  </section>
+
+  <!-- Social Media -->
+  <section class="section" id="social">
+    <h3>Connect With Us</h3>
+
+    <div class="socials">
+      <div class="social-card">
+        <i class="fab fa-youtube youtube"></i>
+        <h4>YouTube</h4>
+        <a href="https://clicktime.symantec.com/15x8Y4HNGnyThzNQAstkD?h=-CKeW4Z59tzi1sfOTg79ywgK2DmT8qlxy58awBcaCXA=&u=https://www.youtube.com/%40KokanSwad-t3z" target="_blank">Visit Channel</a>
+      </div>
+
+      <div class="social-card">
+        <i class="fab fa-instagram instagram"></i>
+        <h4>Instagram</h4>
+        <a href="https://clicktime.symantec.com/15x8TE65pBHsJ3YUdKVbb?h=6snHUBZw5sZHCb9q77GKtAO6pwy3kUAeEiGGtQTd6wo=&u=https://www.instagram.com/kokan_swad_by_jadhav_bandhu?igsh%3DaGZ4cWhkOGkwNDdo" target="_blank">Follow Us</a>
+      </div>
+
+      <div class="social-card">
+        <i class="fab fa-facebook facebook"></i>
+        <h4>Facebook</h4>
+        <a href="https://clicktime.symantec.com/15x8NPtoMZcGt6iZ5m6Sy?h=J7gfxXI2oFr6_tr2tdTL14OSTsT1PP3RrnB9oNY3Z6c=&u=https://www.facebook.com/share/17iU6Wz3hx/" target="_blank">Like Page</a>
+      </div>
+
+      <div class="social-card">
+        <i class="fab fa-google google"></i>
+        <h4>Google Business</h4>
+        <a href="https://clicktime.symantec.com/15x8CjWESLF64D4hzeJ9j?h=07ZymRDgMq8_kIZyaqyj69uXfxyNTvuOOXZx9ymnp5k=&u=https://share.google/hddnd6HDmCNxmkbWX
+" target="_blank">View Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2025 <span>Kokan Swad</span> | Fresh Mango Business</p>
+  </footer>
+
+</body>
+</html>
